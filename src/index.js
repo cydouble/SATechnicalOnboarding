@@ -512,7 +512,7 @@ var VanillaTilt = (function () {
     return VanillaTilt;
     
     }());
-    
+
 function initScrollReveal(targetElements, defaultProps) {
     if (!targetElements.length) return;
   
@@ -528,15 +528,15 @@ function initScrollReveal(targetElements, defaultProps) {
 function initTiltAnimation() {
     const elements = document.querySelectorAll(".js-tilt");
     VanillaTilt.init(elements);
-  }
+}
   
-  export const defaultProps = {
+export const defaultProps = {
     easing: "cubic-bezier(0.5, 0, 0, 1)",
     distance: "30px",
     duration: 1000,
     desktop: true,
     mobile: true,
-  };
+};
   
   export const targetElements = [
     {
@@ -600,4 +600,4 @@ function initTiltAnimation() {
   
 
 initScrollReveal(targetElements, defaultProps);
-initTiltEffect();
+initTiltAnimation();
