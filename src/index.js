@@ -2,7 +2,7 @@
 // import initTiltEffect from "./scripts/tiltAnimation";
 // import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 
-export default function initScrollReveal(targetElements, defaultProps) {
+function initScrollReveal(targetElements, defaultProps) {
     if (!targetElements.length) return;
   
     ScrollReveal({ reset: false });
@@ -14,7 +14,7 @@ export default function initScrollReveal(targetElements, defaultProps) {
 
 import VanillaTilt from "vanilla-tilt";
 
-export default function initTiltAnimation() {
+function initTiltAnimation() {
     const elements = document.querySelectorAll(".js-tilt");
     VanillaTilt.init(elements);
   }
